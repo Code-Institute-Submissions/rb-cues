@@ -1,45 +1,45 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+[This website](https://rb-cues.herokuapp.com//) was created to let people buy pool gear.<br>
+As a user you can shop for cues and accessoires.<br>
+As admin you can add, update or delete items.<br>
 
-Welcome USER_NAME,
+* User stories
+    * For a user I want to be able to ... so that I can ...
+        * navigatie easily between the pages
+            - browse throught the website.
+        * register for an account
+            - view my personal data on a profile.
+        * login/ logout of my registered account
+            - access my personal data on a profile.
+        * receive a confirmation after registration
+            - verify that the registration process is completed.
+        * have a profile
+            - store my user info and see my old orders.
+        * reset my password
+            - recover access to my account.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+        * see all products
+            - choose which item to buy.
+        * see all products of a specific category
+            - compare products in one view.
+        * sort the selected list of products
+            - easily find the cheapest product
+        * search a product by name
+            - find a specific product
 
-## Gitpod Reminders
+        * see a products detail
+            - see the price, description and a preview of the product.
+            - add this item to my shopping cart.
+        * see the total of my shopping cart
+            - avoid overspending.
+        
+        * see all items in my shopping cart
+            - know I added the correct items.
+        * remove items from my cart
+            - only add the correct items I want to purchase.
+        * adjust the quantity of items in my cart
+            - make changes before paying.
+        * 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+    * For an admin I want to be able to ... so that I can ...
+    

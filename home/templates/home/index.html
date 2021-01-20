@@ -1,6 +1,31 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block content %}
-    <h1 class="display-4 text-success">Welcome to R&B Cues</h1>
-{% endblock %} 
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-7 col-md-6 my-auto">
+
+                <!-- Title on index page -->
+                <h1 class="logo-font main-header-text text-green-rb">
+                    Welcome to the R&B Cues webshop
+                </h1>
+
+                <!-- Call to action button -->
+                <div class="col-12 my-5 shop-now-div">
+                    <a href="" class="shop-now-button btn w-100 text-uppercase py-3 text-green-rb">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

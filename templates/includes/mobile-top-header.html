@@ -44,8 +44,8 @@
     <!-- Logged in user items -->
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'account_logout' %}" class="dropdown-item">
-                    Product Management
+                <a href="{% url 'admin:index' %}" class="dropdown-item">
+                    Admin section
                 </a>
             {% endif %}
             <a href="" class="dropdown-item">

@@ -96,7 +96,7 @@
                             <!-- Logged in user items -->
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="" class="dropdown-item">
+                                        <a href="{% url 'admin:index' %}" class="dropdown-item">
                                             Admin Section
                                         </a>
                                     {% endif %}

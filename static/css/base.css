@@ -1,0 +1,98 @@
+/* vertical centering */
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/homepage_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #fff;
+    font-family: 'Lato';
+}
+
+h2 {
+    font-family: 'Rye';
+}
+
+.bg-dark {
+    background-color: #000!important;
+}
+
+.text-green-rb {
+    color: green;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #fff;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+/* buttons */ 
+.shop-now-button {
+    color: green;
+    width: 100%;
+    font-weight: 800;
+}
+
+.shop-now-div {
+    border: 2px solid black;
+    border-radius: 25px;
+    background: #ccc;
+    max-width: 280px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-div:hover,
+.shop-now-div:active,
+.shop-now-div:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.shop-now-button:hover {
+    color: white;
+}
+
+/* --- Smaller devices --- */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+} 

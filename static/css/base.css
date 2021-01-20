@@ -76,7 +76,8 @@ h2 {
     color: #fff;
 }
 
-.shop-now-button:hover {
+.shop-now-button:hover,
+.icon-menu:hover {
     color: #fff;
 }
 

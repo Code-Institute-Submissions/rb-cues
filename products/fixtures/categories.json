@@ -1,0 +1,55 @@
+[
+{
+    "pk": 1,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "billiards",
+        "friendly_name": "Billiards Cue"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "snooker",
+        "friendly_name": "Snooker Cue"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "pool",
+        "friendly_name": "Pool"
+    }
+},
+{
+    "pk": 4,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "maintenance",
+        "friendly_name": "Maintenance"
+    }
+},
+{
+    "pk": 5,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "gloves",
+        "friendly_name": "Gloves"
+    }
+},
+{
+    "pk": 6,
+    "model": "products.category",
+    "fields":
+    {
+        "name": "tips",
+        "friendly_name": "Tips"
+    }
+}]

@@ -25,16 +25,16 @@
                 Cues
             </a>
             <div class="dropdown-menu" aria-labelledby="cues-link">
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=billiards" class="dropdown-item">
                     Billiards
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=pool" class="dropdown-item">
                     Pool
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=snooker" class="dropdown-item">
                     Snooker
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=billiards,pool,snooker" class="dropdown-item">
                     All Cues
                 </a>
             </div>
@@ -46,16 +46,16 @@
                 Accessories
             </a>
             <div class="dropdown-menu" aria-labelledby="accessories-link">
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=maintenance" class="dropdown-item">
                     Maintenance
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=gloves" class="dropdown-item">
                     Gloves
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=tips" class="dropdown-item">
                     Tips
                 </a>
-                <a href="" class="dropdown-item">
+                <a href="{% url 'products' %}?category=maintenance,gloves,tips" class="dropdown-item">
                     All Accessories
                 </a>
             </div>

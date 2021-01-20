@@ -90,6 +90,17 @@ h2 {
     background-color: rgba(1,255,66,1);
 }
 
+/* Overlay for background body */
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
 /* --- Smaller devices --- */
 
 /* Slightly larger container on xl screens */

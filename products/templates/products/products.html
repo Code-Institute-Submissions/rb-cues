@@ -10,10 +10,91 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="overlay"></div>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                {{ products }}
+            <div class="col text-center">
+                <hr>
+                <h2 class="logo-font">
+                    Shop
+                </h2>
+
+                <!-- Show search text -->
+                {% if request.GET.q %}
+                    <h6>results for "{{ request.GET.q }}"</h6>
+                {% endif %}
+
+                <!-- Show selected categories -->
+                {% for c in current_categories %}
+                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-dark text-green-rb rounded-1 border border-dark">{{ c.friendly_name }}</span>
+                    </a>
+                {% endfor %}
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-10 offset-1">
+                <hr class="w-50 mb-1">
+                <div class="row">
+
+                    <!-- Product card -->
+                    {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2">
+                            <div class="card h-100 border-1 border-dark p-3">
+                                {% if product.image %}
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                                {% if product.new %}
+                                    <p class="small mt-1 mb-0 newdeals">
+                                        <a class="text-muted" href="{% url 'products' %}?new">
+                                            <i class="fa fa-certificate mr-1"></i>
+                                            New
+                                        </a>
+                                    </p>
+                                {% endif %}
+                                {% if product.deal %}
+                                    <p class="small mt-1 mb-0 newdeals">
+                                        <a class="text-muted" href="{% url 'products' %}?deal"> 
+                                            <i class="fas fa-star-half mr-1"></i>
+                                            Deal
+                                        </a>
+                                    </p>
+                                {% endif %}
+                                <div class="card-body pb-0">
+                                    <p class="mb-0">
+                                        {{ product.name }}
+                                    </p>
+                                </div>
+                                <div class="card-footer bg-white pt-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="lead mb-0 text-right font-weight-bold price-text">
+                                                &#8364; {{ product.price }}
+                                            </p>
+                                            
+                                            <!-- Show category -->
+                                            {% if product.category %}
+                                                <p class="small mt-1 mb-0">
+                                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                                        <i class="fas fa-tag mr-1"></i>
+                                                        {{ product.category.friendly_name }}
+                                                    </a>
+                                                </p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

@@ -140,3 +140,18 @@ h2 {
         padding-top: 164px;
     }
 } 
+
+@media (max-width: 991px) {
+    .header-container {
+        margin-top: 116px;
+    }
+    .navbar, .navbar-toggler {
+        font-size: small;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar, .navbar-toggler {
+        font-size: xx-small;
+    }
+} 

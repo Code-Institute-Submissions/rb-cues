@@ -15,19 +15,25 @@
         <div class="row">
             <div class="col text-center">
                 <hr>
+
+            <!-- Title -->
                 <h2 class="logo-font">
                     Shop
                 </h2>
 
-                <!-- Show search text -->
+            <!-- Show search text -->
                 {% if request.GET.q %}
-                    <h6>results for "{{ request.GET.q }}"</h6>
+                    <h6>
+                        results for "{{ request.GET.q }}"
+                    </h6>
                 {% endif %}
 
-                <!-- Show selected categories -->
+            <!-- Show selected categories -->
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-dark text-green-rb rounded-1 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-dark text-green-rb rounded-1 border border-dark">
+                            {{ c.friendly_name }}
+                        </span>
                     </a>
                 {% endfor %}
                 <hr>
@@ -38,19 +44,23 @@
                 <hr class="w-50 mb-1">
                 <div class="row">
 
-                    <!-- Product card -->
+                <!-- Product card -->
                     {% for product in products %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2">
                             <div class="card h-100 border-1 border-dark p-3">
+
+                            <!-- Render image if available otherwise custom iamge is shown -->
                                 {% if product.image %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
                                 {% else %}
-                                <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpg" alt="{{ product.name }}">
+                                    </a>
                                 {% endif %}
+                            
+                            <!-- Show new and/or deals -->
                                 {% if product.new %}
                                     <p class="small mt-1 mb-0 newdeals">
                                         <a class="text-muted" href="{% url 'products' %}?new">
@@ -79,7 +89,7 @@
                                                 &#8364; {{ product.price }}
                                             </p>
                                             
-                                            <!-- Show category -->
+                                        <!-- Show category -->
                                             {% if product.category %}
                                                 <p class="small mt-1 mb-0">
                                                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -98,6 +108,8 @@
             </div>
         </div>
     </div>
+
+<!-- Scroll to top button -->
     <div class="btt-button">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-green-rb mx-auto my-auto"></i>

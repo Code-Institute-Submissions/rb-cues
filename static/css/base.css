@@ -51,13 +51,14 @@ h2 {
     font-weight: 800;
     padding: initial;
     display: inherit;
+    text-decoration: none !important;
 }
 
 .shop-now-div {
     border: 2px solid rgba(0,0,0,1);
     border-radius: 25px;
     background: rgba(0,0,0,1);;
-    width: 30%;
+    width: 40%;
     margin: auto;
 }
 

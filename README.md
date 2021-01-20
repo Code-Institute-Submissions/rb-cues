@@ -119,3 +119,13 @@ As admin you can add, update or delete items.<br>
 ![Edit](https://github.com/VolkovBos/rb-cues/blob/master/wireframes/Edit.png?raw=true)
 
 </details>
+
+
+## Deployment
+
+To open in GitPod
+1) pip install -r requirements.txt
+2) python manage.py migrate
+3) python manage.py loaddata categories
+4) python manage.py loaddata products
+5) python manage.py createsuperuser

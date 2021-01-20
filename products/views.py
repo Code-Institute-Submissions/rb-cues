@@ -38,9 +38,18 @@ def all_products(request):
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
-                categories = request.GET['category'].split(',')
-                products = products.filter(category__name__in=categories)
-                categories = Category.objects.filter(name__in=categories)
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
+        if 'new' in request.GET:
+            products = products.filter(new=True)
+
+        if 'deal' in request.GET:
+            products = products.filter(deal=True)
+
+        if 'new_deal' in request.GET:
+            products = products.filter(Q(deal=True) | Q(new=True))
 
         if 'q' in request.GET:
             query = request.GET['q']

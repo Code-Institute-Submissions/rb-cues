@@ -24,8 +24,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-10 col-md-6 col-lg-4 offset-lg-2 mx-auto border-dark p-3">
-                <div class="image-container my-5 border-dark p-3">
+            <div class="col-10 col-md-6 col-lg-4 offset-lg-2 mx-auto">
+                <div class="image-container my-5 border-dark p-5">
 
                 <!-- Render image if available otherwise custom iamge is shown -->
                     {% if product.image %}
@@ -48,11 +48,13 @@
                         <i class="fas fa-tag mr-1"></i>
                         {{ product.category.friendly_name }}
                     </a>
-                    <div class="product-description my-4 p-2">
+                    <hr>
+                    <div class="my-4 p-2">
                         <p>
                             {{ product.description|linebreaks }}
                         </p>
                     </div>
+                    <hr>
                     <p class="lead mb-0 text-left font-weight-bold price-text">
                         &#8364; {{ product.price }}
                     </p>

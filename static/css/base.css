@@ -88,7 +88,7 @@ h2 {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #000;
+    background-color: rgba(0,0,0,1);
     border-radius: 25px;
     font-size: x-large;
 }
@@ -117,6 +117,10 @@ h2 {
 	z-index: -1;
 }
 
+.border-dark {
+    border: 2px solid rgba(0,0,0,1);
+    border-radius: 10px;
+}
 /* --- Smaller devices --- */
 
 /* Slightly larger container on xl screens */

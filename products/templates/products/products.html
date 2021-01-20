@@ -122,10 +122,11 @@
                                                     </a>
                                                 </p>
                                             {% endif %}
+
                                         <!-- Buttons -->
                                             <div>   
                                                 {% if request.user.is_superuser %}
-                                                    <h5 class="ml-3">
+                                                    <small class="ml-3">
                                                         <a href="{% url 'edit_product' product.id %}">
                                                             Edit
                                                         </a> 
@@ -133,7 +134,7 @@
                                                         <a class="text-danger" href="{% url 'delete_product' product.id %}">
                                                             Delete
                                                         </a>
-                                                    </h5>
+                                                    </small>
                                                 {% endif %}
                                             </div>
                                         </div>

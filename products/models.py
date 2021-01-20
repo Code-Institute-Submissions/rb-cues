@@ -1,6 +1,7 @@
 from django.db import models
 
 
+# A model for the categories
 class Category(models.Model):
 
     class Meta:
@@ -17,6 +18,7 @@ class Category(models.Model):
         return self.friendly_name
 
 
+# A model for the products
 class Product(models.Model):
 
     category = models.ForeignKey(

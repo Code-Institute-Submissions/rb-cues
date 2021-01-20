@@ -14,12 +14,19 @@ h2 {
     font-family: 'Rye';
 }
 
+.main-header-text {
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 25px;
+    text-align: center;
+}
+
 .bg-dark {
     background-color: #000!important;
 }
 
 .text-green-rb {
-    color: green;
+    color: rgba(1,255,66,1)
 }
 
 .icon {
@@ -41,20 +48,21 @@ h2 {
 
 /* buttons */ 
 .shop-now-button {
-    color: green;
-    width: 100%;
     font-weight: 800;
+    padding: initial;
+    display: inherit;
 }
 
 .shop-now-div {
-    border: 2px solid black;
+    border: 2px solid rgba(0,0,0,1);
     border-radius: 25px;
-    background: #ccc;
-    max-width: 280px;
+    background: rgba(0,0,0,1);;
+    width: 30%;
+    margin: auto;
 }
 
 .btn-black {
-    background: black;
+    background: rgba(0,0,0,1);
     color: white;
 }
 
@@ -65,11 +73,11 @@ h2 {
 .btn-black:active,
 .btn-black:focus {
     background: #222;
-    color: white;
+    color: #fff;
 }
 
 .shop-now-button:hover {
-    color: white;
+    color: #fff;
 }
 
 /* --- Smaller devices --- */

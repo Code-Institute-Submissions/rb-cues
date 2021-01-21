@@ -90,22 +90,23 @@
                                 {% endif %}
                             
                             <!-- Show new and/or deals -->
-                                {% if product.new %}
+                                {% if product.new or product.deal%}
                                     <p class="small mt-1 mb-0 newdeals">
-                                        <a class="text-muted" href="{% url 'products' %}?new">
-                                            <i class="fa fa-certificate mr-1"></i>
-                                            New
-                                        </a>
+                                        {% if product.new %}
+                                            <a class="text-muted" href="{% url 'products' %}?new">
+                                                <i class="fa fa-certificate mr-1"></i>
+                                                New
+                                            </a>
+                                        {% endif %}
+                                        {% if product.deal %}
+                                            <a class="text-muted" href="{% url 'products' %}?deal"> 
+                                                <i class="fas fa-star-half mr-1"></i>
+                                                Deal
+                                            </a>
+                                        {% endif %}
                                     </p>
                                 {% endif %}
-                                {% if product.deal %}
-                                    <p class="small mt-1 mb-0 newdeals">
-                                        <a class="text-muted" href="{% url 'products' %}?deal"> 
-                                            <i class="fas fa-star-half mr-1"></i>
-                                            Deal
-                                        </a>
-                                    </p>
-                                {% endif %}
+                                                        
                                 <div class="card-body pb-0">
                                     <p class="mb-0">
                                         {{ product.name }}

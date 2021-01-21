@@ -32,12 +32,12 @@
                 <div class="d-block d-md-none">
                     <div class="row">
                         <div class="col">
-                            
+                            {% include "cart/cart-total.html" %}
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            
+                            {% include "cart/checkout-buttons.html" %}
                             <p class="text-muted mb-5">
                                 A summary of your cart contents is below
                             </p>
@@ -48,10 +48,10 @@
                     {% for item in cart_items %}
                         <div class="row">
                             <div class="col-12 col-sm-6 mb-2">
-                                
+                                {% include "cart/product-image.html" %}
                             </div>
                             <div class="col-12 col-sm-6 mb-2">
-                                
+                                {% include "cart/product-info.html" %}
                             </div>
                             <div class="col-12 col-sm-6 order-sm-last">
                                 <p class="my-0">
@@ -62,7 +62,7 @@
                                 </p>
                             </div>
                             <div class="col-12 col-sm-6">
-                                
+                                {% include "cart/quantity-form.html" %}
                             </div>
                         </div>
                         <div class="row">
@@ -104,10 +104,10 @@
                         {% for item in cart_items %}
                             <tr>
                                 <td class="p-3 w-25">
-                                    
+                                    {% include "cart/product-image.html" %}
                                 </td>
                                 <td class="py-3">
-                                    
+                                    {% include "cart/product-info.html" %}
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">
@@ -115,7 +115,7 @@
                                     </p>
                                 </td>
                                 <td class="py-3">
-                                    
+                                    {% include "cart/quantity-form.html" %}
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">
@@ -129,12 +129,12 @@
                         {% endfor %}
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
-                                
+                                {% include "cart/cart-total.html" %}
                             </td>
                         </tr>
                         <tr>
                             <td colspan="5" class="text-right">
-                                
+                                {% include "cart/checkout-buttons.html" %}
                             </td>
                         </tr>
                     </table>

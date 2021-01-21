@@ -12,39 +12,39 @@
 
     <!-- Title -->
         <h2 class="logo-font">
-            Sign In
+            Sign in
         </h2>
         <hr>
     </div>
     <p>
-        {% blocktrans %}If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+        If you have not created an account yet, then please
+        <a href="{{ signup_url }}">sign up</a> first.
     </p>
 
     <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form|crispy }}
-        
+
         {% if redirect_field_value %}
             <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
         
     <!-- Buttons -->
         <div class="mb-5 text-center">
-            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block w-100 text-center">
-                <a class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb" href="{% url 'home' %}">
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <a class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" href="{% url 'home' %}">
                     Home
                 </a>
             </div>
-            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block w-100 text-center">
-                <button class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb" type="submit">
-                    {% trans "Sign In" %}
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <button class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" type="submit">
+                    Sign in
                 </button>
             </div>
         </div>
         <p class="mt-2">
             <a class="button secondaryAction" href="{% url 'account_reset_password' %}">
-                {% trans "Forgot Password?" %}
+                Forgot Password?
             </a>
         </p>
     </form>

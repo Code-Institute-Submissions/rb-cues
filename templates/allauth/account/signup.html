@@ -4,18 +4,42 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+{% block inner_content %}
+    <div class="col text-center">
+        <hr>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
+    <!-- Title -->
+        <h2 class="logo-font">
+            Sign up
+        </h2>
+        <hr>
+    </div>
 
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+    <p>
+        Already have an account? Then please <a href="{{ login_url }}">sign in</a>.
+    </p>
+
+    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+
+    <!-- Buttons -->
+        <div class="mb-5 text-center">
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <a class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" href="{% url 'account_login' %}">
+                    Back to Login
+                </a>
+            </div>
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <button class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" type="submit">
+                    Sign up
+                </button>
+            </div>
+        </div>
+    </form>
 
 {% endblock %}

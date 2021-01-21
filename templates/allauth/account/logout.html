@@ -4,18 +4,42 @@
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Out" %}</h1>
+{% block inner_content %}
 
-<p>{% trans 'Are you sure you want to sign out?' %}</p>
+    <div class="col text-center">
+        <hr>
 
-<form method="post" action="{% url 'account_logout' %}">
-  {% csrf_token %}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-  {% endif %}
-  <button type="submit">{% trans 'Sign Out' %}</button>
-</form>
+    <!-- Title -->
+        <h2 class="logo-font">
+            Sign out
+        </h2>
+        <hr>
+    </div>
 
+    <p class="text-center">
+        Are you sure you want to sign out?
+    </p>
+
+    <form method="post" action="{% url 'account_logout' %}">
+    {% csrf_token %}
+
+    {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+    {% endif %}
+
+    <!-- Buttons -->
+        <div class="mb-5 text-center">
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <a class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" href="{% url 'home' %}">
+                    Cancel
+                </a>
+            </div>
+            <div class="submit-button col-5 mt-3 shop-now-div d-inline-block">
+                <button class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb  w-100" type="submit">
+                    Sign out
+                </button>
+            </div>
+        </div>
+    </form>
 
 {% endblock %}

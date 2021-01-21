@@ -136,6 +136,33 @@ a.category-badge > span.badge:hover {
     border: 2px solid rgba(0,0,0,1);
     border-radius: 10px;
 }
+
+/*  bootstrap toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+.checkout-div {
+    width: 80%;
+}
+
+.notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* --- Smaller devices --- */
 
 /* Slightly larger container on xl screens */

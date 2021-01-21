@@ -1,7 +1,7 @@
 <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
-        <div class="input-group">
+        <div class="input-group border-dark">
             <div class="input-group-prepend">
                 <button class="decrement-qty btn btn-sm" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                     <span>

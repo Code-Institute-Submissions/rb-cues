@@ -81,7 +81,10 @@ TEMPLATES = [
                 # required by allauth
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
+
+                # Other
                 'django.contrib.messages.context_processors.messages',
+                'cart.contexts.cart_contents',
                 'django.template.context_processors.media',
             ],
             'builtins': [

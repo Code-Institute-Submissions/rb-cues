@@ -1,0 +1,34 @@
+/* Checkout shipping/billing onfo section */
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: rgba(0,0,0,1);
+    border: 1px solid rgba(0,0,0,1);
+}
+
+/* placeholder css */
+select,
+select option {
+    color: rgba(0,0,0.5);
+}
+
+select:invalid,
+select option[value=""] {
+    color: rgba(0,0,0,0.5) !important;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(0,0,0,0.5);
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: rgba(0,0,0,0.5);
+}
+
+::placeholder {
+  color: rgba(0,0,0,0.5) !important;
+}

@@ -1,0 +1,111 @@
+[1mdiff --git a/checkout/views.py b/checkout/views.py[m
+[1mindex cde721d..31a3f08 100644[m
+[1m--- a/checkout/views.py[m
+[1m+++ b/checkout/views.py[m
+[36m@@ -1,16 +1,17 @@[m
+[31m-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse[m
+[32m+[m[32mfrom django.shortcuts import ([m
+[32m+[m[32m    render, redirect, reverse, get_object_or_404, HttpResponse[m
+[32m+[m[32m)[m
+ from django.views.decorators.http import require_POST[m
+ from django.contrib import messages[m
+ from django.conf import settings[m
+[31m-[m
+ from .forms import OrderForm[m
+ from .models import Order, OrderLineItem[m
+ from products.models import Product[m
+ from cart.contexts import cart_contents[m
+[31m-[m
+ import stripe[m
+ import json[m
+ [m
+[32m+[m
+ @require_POST[m
+ def cache_checkout_data(request):[m
+     try:[m
+[36m@@ -29,6 +30,9 @@[m [mdef cache_checkout_data(request):[m
+ [m
+ [m
+ def checkout(request):[m
+[32m+[m[32m    """[m
+[32m+[m[32m    Handle payments[m
+[32m+[m[32m    """[m
+     stripe_public_key = settings.STRIPE_PUBLIC_KEY[m
+     stripe_secret_key = settings.STRIPE_SECRET_KEY[m
+ [m
+[36m@@ -47,48 +51,48 @@[m [mdef checkout(request):[m
+             'county': request.POST['county'],[m
+         }[m
+         order_form = OrderForm(form_data)[m
+[32m+[m
+         if order_form.is_valid():[m
+             order = order_form.save(commit=False)[m
+             pid = request.POST.get('client_secret').split('_secret')[0][m
+             order.stripe_pid = pid[m
+             order.original_cart = json.dumps(cart)[m
+             order.save()[m
+[32m+[m
+             for item_id, item_data in cart.items():[m
+                 try:[m
+                     product = Product.objects.get(id=item_id)[m
+[31m-                    if isinstance(item_data, int):[m
+[31m-                        order_line_item = OrderLineItem([m
+[31m-                            order=order,[m
+[31m-                            product=product,[m
+[31m-                            quantity=item_data,[m
+[31m-                        )[m
+[31m-                        order_line_item.save()[m
+[31m-                    else:[m
+[31m-                        for size, quantity in item_data['items_by_size'].items():[m
+[31m-                            order_line_item = OrderLineItem([m
+[31m-                                order=order,[m
+[31m-                                product=product,[m
+[31m-                                quantity=quantity,[m
+[31m-                                product_size=size,[m
+[31m-                            )[m
+[31m-                            order_line_item.save()[m
+[32m+[m
+[32m+[m[32m                    order_line_item = OrderLineItem([m
+[32m+[m[32m                        order=order,[m
+[32m+[m[32m                        product=product,[m
+[32m+[m[32m                        quantity=item_data,[m
+[32m+[m[32m                    )[m
+[32m+[m[32m                    order_line_item.save()[m
+[32m+[m
+                 except Product.DoesNotExist:[m
+                     messages.error(request, ([m
+[31m-                        "One of the products in your cart wasn't found in our database. "[m
+                         "Please call us for assistance!")[m
+                     )[m
+                     order.delete()[m
+                     return redirect(reverse('view_cart'))[m
+ [m
+             request.session['save_info'] = 'save-info' in request.POST[m
+[31m-            return redirect(reverse('checkout_success', args=[order.order_number]))[m
+[32m+[m
+[32m+[m[32m            return redirect(reverse([m
+[32m+[m[32m                'checkout_success',[m
+[32m+[m[32m                args=[order.order_number])[m
+[32m+[m[32m            )[m
+[32m+[m
+         else:[m
+             messages.error(request, 'There was an error with your form. \[m
+                 Please double check your information.')[m
+     else:[m
+         cart = request.session.get('cart', {})[m
+         if not cart:[m
+[31m-            messages.error(request, "There's nothing in your cart at the moment")[m
+[32m+[m[32m            messages.error([m
+[32m+[m[32m                request, "There's nothing in your cart at the moment"[m
+[32m+[m[32m            )[m
+             return redirect(reverse('products'))[m
+ [m
+         current_cart = cart_contents(request)[m
+[36m@@ -112,7 +116,6 @@[m [mdef checkout(request):[m
+         'stripe_public_key': stripe_public_key,[m
+         'client_secret': intent.client_secret,[m
+     }[m
+[31m-[m
+     return render(request, template, context)[m
+ [m
+ [m

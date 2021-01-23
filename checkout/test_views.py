@@ -15,7 +15,6 @@ class TestViews(TestCase):
         form_data = {
             'full_name': 564356456456
         }
-        order_form = OrderForm(form_data)
 
     def test_Checkout_get(self):
         resp = self.client.get(reverse('checkout'))

@@ -108,12 +108,15 @@ def checkout(request):
 
         order_form = OrderForm()
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        """
+        Attempt to prefill the form with any 
+        info the user maintains in their profile
+        """
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
+                    'full_name': profile.default_full_name,
                     'email': profile.user.email,
                     'phone_number': profile.default_phone_number,
                     'country': profile.default_country,

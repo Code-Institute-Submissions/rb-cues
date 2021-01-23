@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at R&B Cues. 
+
+Your order information:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Grand Total: €{{ order.grand_total }}
+
+Your order will be shipped to:
+{{ order.street_address1 }}
+{{ order.town_or_city }}
+{{ order.country }}
+
+
+Thank you for your order!
+
+Sincerely,
+R&B Cues

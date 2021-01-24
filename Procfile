@@ -1,0 +1,1 @@
+web: gunicorn r_b_cues.wsgi:application

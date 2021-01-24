@@ -109,7 +109,7 @@ def checkout(request):
         order_form = OrderForm()
 
         """
-        Attempt to prefill the form with any 
+        Attempt to prefill the form with any
         info the user maintains in their profile
         """
         if request.user.is_authenticated:
@@ -160,6 +160,7 @@ def checkout_success(request, order_number):
         # Save the user's info
         if save_info:
             profile_data = {
+                'default_full_name': order.full_name,
                 'default_phone_number': order.phone_number,
                 'default_country': order.country,
                 'default_postcode': order.postcode,

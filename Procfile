@@ -1,1 +1,1 @@
-web: gunicorn r_b_cues.wsgi:application
+web: gunicorn rb_cues.wsgi:application

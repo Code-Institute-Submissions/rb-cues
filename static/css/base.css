@@ -196,8 +196,21 @@ a.category-badge > span.badge:hover {
     }
 }
 
+@media (max-width: 767px) {
+    .img-fluid {
+        max-width: 60%;
+    }
+}
+
 @media (max-width: 480px) {
     .navbar, .navbar-toggler {
         font-size: xx-small;
     }
-} 
+    .shop-now-div {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}

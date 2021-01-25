@@ -1,7 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from checkout.models import Order
-from .forms import OrderForm
 
 
 class TestViews(TestCase):
@@ -12,9 +11,6 @@ class TestViews(TestCase):
             order_number='test1234',
             order_total='10.99'
         )
-        form_data = {
-            'full_name': 564356456456
-        }
 
     def test_Checkout_get(self):
         resp = self.client.get(reverse('checkout'))

@@ -1,4 +1,4 @@
-[This website](https://rb-cues.herokuapp.com//) was created to let people buy pool gear.<br>
+[This website](https://rb-cues.herokuapp.com/) was created to let people buy pool gear.<br>
 As a user you can shop for cues and accessoires.<br>
 As admin you can add, update or delete items.<br>
 

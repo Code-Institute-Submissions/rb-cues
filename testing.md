@@ -5,7 +5,28 @@
 
 
 ## User Stories
+As a site user I want to be able to ... so that I can ...
+1. register for an account ... view my personal data on a profile
+    - Open each page of the website from multiple devices and multiple browsers
+    - Open with Chrome and Firefox Developer Tools. and click on "Responsive" to check all pages
 
+2. register for an account ... view my personal data on a profile
+    - Open the My Account dropdown menu in the navbar and select 'Register'
+        * The 'Sign Up' page is rendered
+    - On the 'Sign Up' page fill in all required fields and select 'Sign Up'
+        * If the e-mails don't match you'll get an error.
+        * If the passwords don't match you'll get an error.
+        * If the email allready exists you'll get an error.
+        * If the username allready exists you'll get an error.
+        * If the password is not strong enough you'll get an error.
+        * If there are no errors the 'confirm-email' page is rendered and a e-mail is sent with a verification link.
+
+3. receive a confirmation after registration ... verify that the registration process is completed.
+    - Open the e-mail and use the verification link.
+        * The 'confirm-email' page is rendered.
+    - Confirm email
+        * The 'Sign In' page is rendered and you can log in.
+        
 ## Automated
 Automated testing is an addition to the manual testing to get the most coverage of the website. The aim was not to get 100% coverage but to get the inner working tested. I used Django testing module, The Tests were written for 'Views', 'Forms', 'Urls' and 'Models' and can be found in each application specific folders. All tests can be run with the command: 'python manage.py test'
 

@@ -9,7 +9,6 @@ As admin you can add, update or delete items.<br>
      - [User Stories](#user-stories)
      - [Wireframes](#wireframes)
      - [Design](#design)
-     - [Database](#database)
 2. [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
@@ -19,11 +18,11 @@ As admin you can add, update or delete items.<br>
     - [Framework](#framework)
     - [Resources](#resources)
 4. [Testing](#testing)
+    - [Testing User Stories](#testing-user-stories)
 5. [Deployment](#deployment)
-    - [For my assessors](#for-my-assessors)
+    - [GitPod](#gitpod)
 6. [Credits](#credits)
     - [Content](#content)
-    - [Media](#media)
     - [Acknowledgements](#acknowledgements)
 
 ## UX
@@ -122,10 +121,50 @@ As admin you can add, update or delete items.<br>
 
 
 ## Deployment
+This project was created using Github.<br>
+From there I used Gitpod.io to write my code.<br>
+Then I used commits to git followed by pushes to my GitHub repository.<br>
+Later on I've deployed this project to Heroku and used automated pushes to make sure my pushes to GitHub were also made to Heroku.<br>
+For deployment on Heroku I've used the following steps:
+* Using the terminal command pip freeze > requirements.txt I have created a requirements.txt file.
+* Using the terminal command echo web: python app.py > Procfile I have created a procfile.
+* I've used git add, git commit and git push to push the requirements and Procfile to GitHub.
+* I've created a new app on the Heroku website by using the "new" button on my dashboard.
+* I gave the app a name of rb-cues and set the region to Europe.
+* From the Heroku dashboard I've clicked "Deploy" > "Deployment method" and selected GitHub.
+* Confirm the linking of the heroku app to the correct GitHub repository.
+* In the heroku dashboard I've clicked "Settings" > "Reveal Config Vars".
+* I've added the config vars for my DATABASE_URL, EMAIL_HOST_PASS, EMAIL_HOST_USER, SECRET_KEY, STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET, USE_AWS.
+* In the heroku dashboard I've clicked "Deploy".
+* In the "Manual Deployment" section of this page I've made sure the master branch is selected and I've clicked "Deploy Branch".
+* The site was now successfully deployed.
 
-To open in GitPod
-1) pip install -r requirements.txt
-2) python manage.py migrate
-3) python manage.py loaddata categories
-4) python manage.py loaddata products
-5) python manage.py createsuperuser
+### Gitpod
+To run this project in GitPod:
+1) Use the Gitpod button on the GitHub repository
+2) pip install -r requirements.txt
+    - Install all python apps necessary for this site
+3) python manage.py migrate
+    - Create database based on the models
+4) python manage.py loaddata categories
+    - Load category fixture data (categories need to be loaded before products)
+5) python manage.py loaddata products
+     - Load products fixture data
+6) python manage.py createsuperuser
+    - Fill in a username, email and a password
+7) python manage.py runserver
+    - Run the site
+
+
+## Credits
+### Content
+I used code from [Project - Boutique Ado](https://courses.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/?activate_block_id=block-v1%3ACodeInstitute%2BFSF_102%2BQ1_2020%2Btype%40sequential%2Bblock%40d3188bf68530497aa5fba55d07a9d7d7) from [Code Institue](https://github.com/Code-Institute-Org) for this project and I also used this as a guideline for the steps in the development proces.
+
+### Acknowledgements
+Thanks to [Tim (Justim)](https://github.com/justim) for some deeper explanation about Python views and decorators. Helped me with the login view decorator.
+
+Thanks to [Robert Zunikoff](https://unsplash.com/@rzunikoff), for the main index background image
+
+And a thanks to my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) who gave me honest, specific and good feedback.
+
+[w3schools](https://www.w3schools.com/) and [StackOverflow](https://stackoverflow.com/) for research.

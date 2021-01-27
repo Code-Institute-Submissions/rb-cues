@@ -16,7 +16,6 @@ As admin you can add, update or delete items.<br>
     - [Framework](#framework)
     - [Resources](#resources)
 4. [Testing](#testing)
-    - [Testing User Stories](#testing-user-stories)
 5. [Deployment](#deployment)
     - [GitPod](#gitpod)
 6. [Credits](#credits)

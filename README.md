@@ -47,9 +47,9 @@ As admin you can add, update or delete items.<br>
 <details>
 <summary>As a logged in user I want to be able to ... so that I can ...</summary>
 
-1. login/ logout of my registered account ... access my personal data on a profile.
-2. have a profile ... store my user info and see my old orders.
-3. reset my password ... recover access to my account.
+1. reset my password ... recover access to my account.
+2. login/ logout of my registered account ... access my personal data on a profile.
+3. have a profile ... store my user info and see my old orders.
 4. enter my billing information ... checkout easier.
 </details>
 <details>

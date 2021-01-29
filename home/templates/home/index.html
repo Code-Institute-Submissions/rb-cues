@@ -11,19 +11,56 @@
 
 {% block content %}
     <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-12 my-auto">
+        <div class="row h-50">
+            <div class="col-12">
 
             <!-- Title on index page -->
                 <h1 class="logo-font main-header-text text-green-rb">
                     Welcome to the R&B Cues webshop
                 </h1>
 
-            <!-- Call to action button -->
-                <div class="col-12 my-5 shop-now-div">
-                    <a href="{% url 'products' %}" class="shop-now-button btn w-100 text-uppercase py-3 text-green-rb">
-                        Shop Now
-                    </a>
+            <!-- Call to action buttons -->
+                <div class="col-12 text-center mt-5">
+                    <div class="shop-now-div d-inline-block">
+                        <a href="{% url 'products' %}" class="shop-now-button text-uppercase py-3 text-green-rb btn w-100">
+                            Shop now
+                        </a>
+                    </div>
+                    <div class="shop-now-div d-inline-block">
+                        <a href="{% url 'contact' %}" class="shop-now-button text-uppercase py-3 text-green-rb btn w-100">
+                            Contact us
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 mx-auto">
+
+            <!-- Info of company -->
+                <div class="main-page-text">
+                    <p>
+                        WELCOME TO THE WEBSITE OF R&B Cues
+                        R&B Cues has been a family business since 1991. Founded by Henk Bos and now continued by son Robbert Bos.
+                    </p>
+                    <p>
+                        With 10 employees we work with great pleasure in the billiard world and deliver our products through our online webshops. We deliver our articles super fast and with an eye for good service to all billiards enthusiasts.
+                    </p>
+                    <p>
+                        R&B Cues mainly supplies directly from its own stocks so that a fast delivery and good service is guaranteed by us.
+                    </p>
+                    <p>
+                        Thanks to our many years of experience in the billiards world, you can also contact us for all maintenance and repairs to the billiard table and pool cue.
+                        With 4 technicians who are ready 6 days a week to repair your cue, you can wait for your repair in almost all cases with standard repairs. So ready while you wait!
+                    </p>
+                    <p>
+                        R&B Cues has a large regular clientele in which private individuals, catering and various government institutions are assisted by R&B Cues with advice and action and of course with good service.
+                    </p>
+                    <p>
+                        Do you want a new billiard cloth on your billiard table or does your billiard cue need a new cue tip, then you can have your billiard or cue ready at R&B Cues, we are happy to help you!
+                    </p>
                 </div>
             </div>
         </div>

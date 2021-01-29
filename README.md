@@ -135,6 +135,9 @@ Changes Dymamicaly depending on the login status of the user.
 - If the user is logged in it shows the basic menu with 'My Profile/Logout' and shopping cart.
 - If the user is logged in and a superuser it shows the basic menu with 'Admin Section/Add Product/ My Profile/Logout' and shopping cart.
 
+Contact Page
+- Through the navbar, under the my account dropdown manu, and on several locations on the site there is a link to the contact page. Where a site user is able to send a message to the store owner.
+
 The 4 submenu items are links to the shop. They are clickable and lead to:
 All Products
 - By Price; shows all products in the shop sorted by price low to high.
@@ -200,7 +203,6 @@ Order history
 A order history log where you can find all of your orders.
 
 ### Features Left to Implement
-- A contact page.
 - Ability to maintain stock on all products.
 
  <div align="right">
@@ -228,6 +230,7 @@ I have used the following technologys for this project:
 * PIP, to download tools
 * [Stripe](https://stripe.com/) for online payment
 * [Postgres SQL](https://www.postgresql.org/), for my database
+* [EmailJS](https://www.emailjs.com/), to let the user be able to contact me
 
 ### Framework
 * [Bootstrap](https://getbootstrap.com/), for CSS and HTML framework

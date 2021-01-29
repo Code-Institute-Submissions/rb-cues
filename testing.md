@@ -66,6 +66,7 @@ As a site user I want to be able to ... so that I can ...
         * A success message is shown with a overview of your cart.
 
 10. see the total of my shopping cart ... avoid overspending.
+&
 11. see all items in my shopping cart ... know I added the correct items.
 
     - From every page in the website go to cart icon in the navbar.
@@ -84,6 +85,7 @@ As a site user I want to be able to ... so that I can ...
     - From the 'Shopping cart' select a different quantity for an item from your cart and click on update.
         * The quantity of the selected item is updated.
         * A success message is shown.
+
 14. print an order confirmation ... contact the store if I have questions about the order.
 
     - From the 'Shopping cart' click on checkout.
@@ -140,12 +142,34 @@ As a logged in user I want to be able to ... so that I can ...
 
 As an admin/store owner I want to be able to ... so that I can ...
 
+    - Open the My Account dropdown menu in the navbar and select 'Login'
+    - Fill in verified credentials and click on 'Login' wih a superuser account
+
 1. add new products to the website ... fill my webstore.
+    - Open the My Account dropdown menu in the navbar and select 'Add Product'
+        * The 'Add Product' page is rendered.
+    - Fill in at least al required field and click 'Add'.
+        * The 'Product Detail' page is rendered with the product just added.
+        * You'll get a succes message in the top right corner that the insert is successfull.
 
 2. edit products in the website ... change prices, descriptions and images.
+    - From the 'Products Detail' page select 'Edit' beneath the product header.
+    - From the 'Products' page select 'Edit' on the product card at the bottom.
+        * The 'Edit Product' page is rendered.
+         * You'll get a message that you're editing this product.
+     - Fill in at least al required field and click 'Update'.
+        * The 'Product Detail' page is rendered.
+        * You'll get a succes message that the update is successfull.
 
 3. delete products from the website ... remove items which aren't sold anymore.
+    - From the 'Products Detail' page select 'Delete' beneath the product header.
+    - From the 'Products' page select 'Delete' on the product card at the bottom.
+        * You'll get a message that you deleted this product.
 
+ <div align="right">
+
+[Back to Top &#8593;](#contents)
+</div>
 
 ## Automated
 Automated testing is an addition to the manual testing to get the most coverage of the website. The aim was not to get 100% coverage but to get the inner working tested. I used Django testing module, The Tests were written for 'Views', 'Forms', 'Urls' and 'Models' and can be found in each application specific folders. All tests can be run with the command: 'python manage.py test'
@@ -157,6 +181,11 @@ tests_urls.py
 
 Due to time management issues I chose not to test the webhook functionality and do a coverage test because this is captured by user storie testing.
 
+ <div align="right">
+
+[Back to Top &#8593;](#contents)
+</div>
+
 ## Validation
 To make sure there where nog syntax errors, I've used the following validators on my pages:
 * [HTML validator](https://validator.w3.org/#validate_by_input)
@@ -164,3 +193,8 @@ To make sure there where nog syntax errors, I've used the following validators o
 * [PEP8](http://pep8online.com/checkresult)
 
 And I used the Flake8 function in GitPod. I left migration and settings.py as is and also ignore warnings about model fields.
+
+ <div align="right">
+
+[Back to Top &#8593;](#contents)
+</div>

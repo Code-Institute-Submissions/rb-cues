@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_js %}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script>
+		(function(){
+            emailjs.init("user_VWTMl2a56d4w3kUKpKAyq");
+            })();
+	</script>
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <hr>
+
+            <!-- Title -->
+                <h2 class="logo-font">
+                    Contact us
+                </h2>
+                <h5 class="text-center page-subtitle">In case of any questions, use the form below!</h5>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 col-md-6 col-lg-4 offset-lg-2 mx-auto">
+                <form class="form" onsubmit="return sendMail(this);">
+                    <div class="form-group">
+                        <label for="name">
+                            Your name:
+                        </label>
+                        <input type="text" id="name" name="name" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Your email:
+                        </label>
+                        <input type="email" id="email" name="email" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            Subject:
+                        </label>
+                        <input type="text" id="subject" name="subject" class="form-control" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">
+                            Your message:
+                        </label>
+                        <textarea rows="5" id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <div class="mb-5 text-center">
+                        <div class="submit-button col-5 mt-3 shop-now-div d-inline-block text-center">
+                            <button class="font-weight-bold shop-now-button btn text-uppercase py-3 text-green-rb w-100" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    <script src="{% static 'contact/js/contactMail.js' %}"></script>
+{% endblock %}

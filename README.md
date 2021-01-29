@@ -263,7 +263,17 @@ For deployment on Heroku I've used the following steps:
 * From the Heroku dashboard I've clicked "Deploy" > "Deployment method" and selected GitHub.
 * Confirm the linking of the heroku app to the correct GitHub repository.
 * In the heroku dashboard I've clicked "Settings" > "Reveal Config Vars".
-* I've added the config vars for my DATABASE_URL, EMAIL_HOST_PASS, EMAIL_HOST_USER, SECRET_KEY, STRIPE_PUBLIC_KEY, STRIPE_SECRET_KEY, STRIPE_WH_SECRET, USE_AWS.
+* I've added the config vars for my:
+    - DATABASE_URL, 
+    - EMAIL_HOST_PASS,  
+    - EMAIL_HOST_USER,  
+    - SECRET_KEY,  
+    - STRIPE_PUBLIC_KEY,  
+    - STRIPE_SECRET_KEY,  
+    - STRIPE_WH_SECRET,  
+    - USE_AWS,
+    - AWS_ACCESS_KEY_ID,
+    - AWS_SECRET_ACCESS_KEY
 * In the heroku dashboard I've clicked "Deploy".
 * In the "Manual Deployment" section of this page I've made sure the master branch is selected and I've clicked "Deploy Branch".
 * The site was now successfully deployed.

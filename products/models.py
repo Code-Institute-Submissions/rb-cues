@@ -37,6 +37,9 @@ class Product(models.Model):
     image = models.ImageField(
         null=True, blank=True
     )
+    stock = models.DecimalField(
+        max_digits=6, decimal_places=0, default=0
+    ) 
     new = models.BooleanField(
         null=False, blank=False, default=False
     )

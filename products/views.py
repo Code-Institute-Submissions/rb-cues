@@ -13,7 +13,8 @@ def all_products(request):
     sorting and search queries
     """
 
-    products = Product.objects.all()
+    # products = Product.objects.all()
+    products = Product.objects.filter(stock__gt=0)
     query = None
     categories = None
     sort = None

@@ -15,6 +15,7 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
         'deal',
         'new',
+        'stock',
     )
 
     ordering = ('sku',)

@@ -58,6 +58,7 @@ As admin you can add, update or delete items.<br>
 1. add new products to the website ... fill my webstore.
 2. edit products in the website ... change prices, descriptions and images.
 3. delete products from the website ... remove items which aren't sold anymore.
+4. Manage stock on the products ... prevent items being shown when there not available.
 </details>
 
 ### WireFrames
@@ -182,6 +183,9 @@ lets you add more items to your order.
 Add to Cart Message
 When you add an item to the cart, a message will appear letting you know it was successful, and give the user a quick way to checkout with a checkout button.
 
+Stock
+In the store you will only see products which are in stock. Stock value 0 on the product will prevent the product to show in te store.
+
 #### Shopping cart
 Price
 A breakdown of all the charges are on the right, so you know how much you will be charged.
@@ -203,7 +207,7 @@ Order history
 A order history log where you can find all of your orders.
 
 ### Features Left to Implement
-- Ability to maintain stock on all products.
+- Manage stock automatically from items being processed from the checkout process.
 
  <div align="right">
 

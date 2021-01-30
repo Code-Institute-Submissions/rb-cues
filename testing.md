@@ -166,6 +166,11 @@ As an admin/store owner I want to be able to ... so that I can ...
     - From the 'Products' page select 'Delete' on the product card at the bottom.
         * You'll get a message that you deleted this product.
 
+4. Manage stock on the products ... prevent items being shown when there not available.
+    - Go to the Django Admin section and change the stock of product.
+        * Items with stock 0 aren't shown in the store.
+        * Items with stock greater than 0 are shown in the store.
+
  <div align="right">
 
 [Back to Top &#8593;](#contents)

@@ -13,7 +13,7 @@ def all_products(request):
     sorting and search queries
     """
 
-    # products = Product.objects.all()
+    # Only show products where stock value isn't 0
     products = Product.objects.filter(stock__gt=0)
     query = None
     categories = None

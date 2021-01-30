@@ -14,7 +14,8 @@ class TestModels(TestCase):
             sku='h202000001',
             name='LORUMIPSUM',
             description='LORUMIPSUM',
-            price=222.00
+            price=222.00,
+            stock=2
         )
 
     def test_city_is_assigned_name_on_creation(self):

@@ -18,7 +18,8 @@ class TestViews(TestCase):
             name='test_product',
             price='10.99',
             new=True,
-            deal=True
+            deal=True,
+            stock=2
         )
 
     def test_view_products_GET(self):

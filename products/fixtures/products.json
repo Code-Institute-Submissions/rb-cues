@@ -9,7 +9,8 @@
         "description": "Hanbat Sky Cue\n\nEntry-level Hanbat billiard cue with wooden clasp\n\nIN STOCK\nHanbat Sky billiard cue with 12mm shaft\n\n± 500 grams",
         "price": 59.99,
         "category": 1,
-        "image": "B_Hanbat_Sky.jpg"
+        "image": "B_Hanbat_Sky.jpg",
+        "stock": 3
     }
 },
 {
@@ -22,7 +23,8 @@
         "description": "LATEST MODEL UPDATE: HANDLE HAS GOT A NEW DESIGN\nThe classic Black Fox in a new guise.\nA billiard cue from solid hornbeam, deep black lacquered and with a black alcantara leather handle.\nHigh playability in technical disciplines.\nMade with silver nickel and a very strong Bakelite F24 ring.\nAlcantara Black Longoni handle: perfect feeling when hitting the ball.",
         "price": 279.99,
         "category": 1,
-        "image": "B_Longoni_Black__Fox.png"
+        "image": "B_Longoni_Black__Fox.png",
+        "stock": 5
     }
 },{
     "pk": 3,
@@ -34,7 +36,8 @@
         "description": "BLACK PEARL II\nby JEAN REVERCHON\n\nHet allernieuwste Longoni model; verwacht in de loop van 2021\n\n\"Black Pearl II\" is the third model developed for the French champion Jean Reverchon by Longoni.\nExclusive Ural wood ( Black hornbeam), Juma Magma and Juma Ivory  Longoni \"Onda\" style rings, real abalone inlays.\n\nStandard with Vp2 joint.",
         "price": 999.99,
         "category": 1,
-        "image": "B_Longoni_Black_Pearl.jpg"
+        "image": "B_Longoni_Black_Pearl.jpg",
+        "stock": 6
     }
 },{
     "pk": 4,
@@ -46,7 +49,8 @@
         "description": "The Ludo Dielis billiard cues were developed in close collaboration with billiard legend Ludo Dielis.\n \n* Maple base with stylish decal print\n* Cue tip: layered\n* Ferrule: fiber\n* Wooden screw\n* Standard delivered with 1 top end of 11 mm (470 to 500 grams)\n* Standard delivered with 1 top end of 12 mm (510 to 530 grams)",
         "price": 239.99,
         "category": 1,
-        "image": "B_Ludo_Dielis_1.jpg"
+        "image": "B_Ludo_Dielis_1.jpg",
+        "stock": 6
     }
 },{
     "pk": 5,
@@ -58,7 +62,8 @@
         "description": "The Ludo Dielis billiard cues were developed in close collaboration with billiard legend Ludo Dielis.\n \n* Maple base with stylish decal print\n* Cue tip: layered\n* Ferrule: fiber\n* Wooden screw\n* Standard delivered with 1 top end of 11 mm (470 to 500 grams)\n* Standard delivered with 1 top end of 12 mm (510 to 530 grams)",
         "price": 239.99,
         "category": 1,
-        "image": "B_Ludo_Dielis_2.jpg"
+        "image": "B_Ludo_Dielis_2.jpg",
+        "stock": 7
     }
 },
 {
@@ -71,7 +76,8 @@
         "description": "This Buffalo snooker cue called Sollux No 1 is NEW in the range.\nA wood structure can be seen in the brown part of the base. The closure of the cue is at three quarters. Great cue for a player who is looking for a nice cue to start with and to improve his snooker skills.",
         "price": 43.99,
         "category": 2,
-        "image": "S_Buffalo_Sollux.jpg"
+        "image": "S_Buffalo_Sollux.jpg",
+        "stock": 7
     }
 },
 {
@@ -84,7 +90,8 @@
         "description": "Snooker cue made of ash wood\nDiameter 9mm\nWeight ± 17.5 Oz\nLength 145 cm\nSupplied with plastic protective sleeve",
         "price": 83.99,
         "category": 2,
-        "image": "S_Ontario_Infinity.jpg"
+        "image": "S_Ontario_Infinity.jpg",
+        "stock": 8
     }
 },
 {
@@ -97,7 +104,8 @@
         "description": "Artemis Sapphire curly maple pool cue\n\nIN STOCK\n2-piece Artemis Sapphie pool cue\nBottom finished with Artemis logo buttring and stainless steel screw thread\nMaple shaft with Artemis ferulle and leather tip",
         "price": 84.99,
         "category": 3,
-        "image": "P_Artemis_Sapphire.jpg"
+        "image": "P_Artemis_Sapphire.jpg",
+        "stock": 13
     }
 },
 {
@@ -110,7 +118,8 @@
         "description": "The two-piece Buffalo pool cue Reaper Mower has a striking decal design. The Buffalo pool cue has a good price-quality ratio and is very suitable for novice players. The Reaper Mower pool cue has a total length of 145 cm and a 13 mm tip.",
         "price": 33.99,
         "category": 3,
-        "image": "P_Buffalo_Reaper.jpg"
+        "image": "P_Buffalo_Reaper.jpg",
+        "stock": 13
     }
 },
 {
@@ -124,6 +133,7 @@
         "price": 111.99,
         "category": 3,
         "image": "P_Fury_Destroyer.jpg",
+        "stock": 2,
         "new": true,
         "deal": true
     }
@@ -138,7 +148,8 @@
         "description": "This classic cue features a maple forearm with beautiful, natural birds eye patterns, four large and four small inlaid flames of split ebony, inlaid with ivorine diamonds and a double silver ring with chessboard pattern in ivorine and ebony in the forearm and butt. Features a brushed stainless steel pilot joint and two nickel rings with Bushka-style block patterns.",
         "price": 499.99,
         "category": 3,
-        "image": "P_George_Balabushka.jpg"
+        "image": "P_George_Balabushka.jpg",
+        "stock": 2
     }
 },
 {
@@ -151,7 +162,8 @@
         "description": "This Maxton Ionics has a minimalist design. Simple but powerful, black with black rings, and matte stainless steel butt cap.\n \n\nThe Maxton Iobic Break-Jump cue is equipped with a comfortable Soft Touch Grip in black leatherette, and a high-gloss joint. Equipped with a high impact composite Break-Jump ferrule.",
         "price": 99.99,
         "category": 3,
-        "image": "P_Maxton_Ionics.jpg"
+        "image": "P_Maxton_Ionics.jpg",
+        "stock": 5
     }
 },
 {
@@ -164,7 +176,8 @@
         "description": "Lucky pool cues are designed, developed, and distributed exclusively by McDermott Cue\n\nIN STOCK\nThe Mc Dermott Lucky pool cues consist of a blend of premium maple wood and intricate graphic overlays.\nThese properties give you exceptional value for pool cues.\nThese cues have one of the most solid hits of the globally produced pool cues in the industry.",
         "price": 89.99,
         "category": 3,
-        "image": "P_Mc_Dermott_Lucky_magenta.jpg"
+        "image": "P_Mc_Dermott_Lucky_magenta.jpg",
+        "stock": 5
     }
 },
 {
@@ -178,6 +191,7 @@
         "price": 99.99,
         "category": 3,
         "image": "P_Mc_Dermott_Lucky_purple.jpg",
+        "stock": 6,
         "new": true,
         "deal": true
     }
@@ -192,7 +206,8 @@
         "description": "Beginner's cue with exclusive designs and a sleek UV high-gloss finish. Quality stainless steel pilot joint in mirror finish, black nylon grip, high impact composite ferrule and Laperti tip.\nAttractive cue with good playing characteristics for a very attractive price.",
         "price": 59.99,
         "category": 3,
-        "image": "P_Piranha_S2.jpg"
+        "image": "P_Piranha_S2.jpg",
+        "stock": 6
     }
 },
 {
@@ -205,7 +220,8 @@
         "description": "The Triton S2 No. 1 pool cue consists of two parts and is a good cue for beginners. The cue has a reinforced top of maple and has a single wooden connection to the bottom end. The weight can be increased by screwing in a weight screw in the bottom end.",
         "price": 43.99,
         "category": 3,
-        "image": "P_Triton_S2.jpg"
+        "image": "P_Triton_S2.jpg",
+        "stock": 9
     }
 },
 {
@@ -218,7 +234,8 @@
         "description": "Soaked with nostalgic attitude, this versatile, retro inspired Harley-Davidson® towel is jacquard loomed of 500 grams per square meter of 100% absorbent terry cotton. A metal grommet and loop make it easy to hang in a convenient location Put this towel on your golf bag, pool cue bag, in the garage or anywhere you might need a hand towel.",
         "price": 12.99,
         "category": 4,
-        "image": "M_Harley_Davidson_towel.jpg"
+        "image": "M_Harley_Davidson_towel.jpg",
+        "stock": 9
     }
 },
 {
@@ -231,7 +248,8 @@
         "description": "Longoni No Blue, amazing polish.\nInstant top end cleaner in 150ml bottle\n\nIN STOCK\nHigh quality cream for polishing your top end\nGives new shine\nContent 150 ml\nLongoni maintenance product",
         "price": 7.99,
         "category": 4,
-        "image": "M_Longoni_No_Blue_polish.jpg"
+        "image": "M_Longoni_No_Blue_polish.jpg",
+        "stock": 8
     }
 },
 {
@@ -244,7 +262,8 @@
         "description": "Original X-Touch Microfibre cloth for maintenance of your shafts.\n\nIN STOCK\nMicrofibre cloth for top ends\n\nMade in Italy\nSuitable for both wooden and carbon shafts\nCharacteristics:\n- Size: 33 X 24 cm\n- Colour: Grey\n- Material: 100% microfiber\nIt comes in a black metal storage box",
         "price": 9.99,
         "category": 4,
-        "image": "M_Original_X_Touch_Microfiber_Cloth.jpg"
+        "image": "M_Original_X_Touch_Microfiber_Cloth.jpg",
+        "stock": 7
     }
 },
 {
@@ -258,6 +277,7 @@
         "price": 16.99,
         "category": 5,
         "image": "G_Aura.jpg",
+        "stock": 6,
         "new": true,
         "deal": true
     }
@@ -272,7 +292,9 @@
         "description": "Breathable comfort from any angle. Your bridge is part of your game’s foundation. On-table success is built on a solid foundation. Axis Gloves feature a durable, ultra low-friction surface paired with cool-flow breathable mesh, reinforced with double stitching to provide players with a smoother and more consistent stroke.",
         "price": 29.99,
         "category": 5,
-        "image": "G_AXIS_High_Performance.jpg"
+        "image": "G_AXIS_High_Performance.jpg",
+        "stock": 3,
+        "deal": true
     }
 },
 {
@@ -285,7 +307,9 @@
         "description": "Ultra-dry breathable streamlined lycra\n- Non-slip bridge cushion\n- Double stitched construction\n- Stylish and comfortable elastic V-Cut\n- Low friction\n- Fits the left bridge hand for right-handed players",
         "price": 19.99,
         "category": 5,
-        "image": "G_Poison_Camo.jpg"
+        "image": "G_Poison_Camo.jpg",
+        "stock": 4,
+        "new": true
     }
 },
 {
@@ -298,7 +322,8 @@
         "description": "30 pieces of leather cue tips, 2-layer leather, 14mm, medium hardness.\n\nEasy to work and tip of 2 layers of leather, easy to shape so suitable for handicrafts.",
         "price": 23.99,
         "category": 6,
-        "image": "T_Horeca_blue.jpg"
+        "image": "T_Horeca_blue.jpg",
+        "stock": 3
     }
 },
 {
@@ -311,7 +336,9 @@
         "description": "100 pcs leather tips of 14mm, soft to medium hardness.\n\nEasy to machine and to shape, so suitable for handicrafts.",
         "price": 43.99,
         "category": 6,
-        "image": "T_Horeca.jpg"
+        "image": "T_Horeca.jpg",
+        "stock": 3,
+        "new": true
     }
 }
 ]
